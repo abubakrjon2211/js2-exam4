@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "name": "Jane Smith",
+      "age": "30",
+      "id": "2",
+      "status": true
+    },
+    {
+      "id": "f055",
+      "name": "Ibrohim Davlatov",
+      "age": "19",
+      "status": false
+    },
+    {
+      "id": "d2a3",
+      "name": "Abduqodir",
+      "age": "12",
+      "status": false
+    },
+    {
+      "id": "9e41",
+      "name": "Najibullo",
+      "age": "23",
+      "status": true
+    },
+    {
+      "id": "80c4",
+      "name": "Muslihiddin",
+      "age": "15",
+      "status": false
+    }
+  ]
+}
