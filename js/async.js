@@ -16,6 +16,11 @@ let formSearch = document.querySelector(".formSearch")
 // Filter
 let select = document.querySelector(".select")
 
+// Info
+let h11 = document.querySelector(".h11")
+let h22 = document.querySelector(".h22")
+let h33 = document.querySelector(".h33")
+
 // get function
 
 async function get() {
@@ -124,6 +129,14 @@ select.onclick = async () => {
             console.log(error);
         }
     }
+}
+
+// Info function
+
+export async function infoFunc(e) {
+    h11.innerHTML = `Name: ${e.name}`
+    h22.innerHTML = `Age: ${e.age}`
+    h33.innerHTML = `Status: ${e.status ? "Active" : "Inactive"}`
 }
 
 export default get

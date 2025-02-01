@@ -2,11 +2,17 @@ import { deleteFunc } from "./async.js";
 
 import { checkedFunc } from "./async.js";
 
+import { infoFunc } from "./async.js";
+
 let box = document.querySelector(".box")
 
 // Edit
 let modal = document.querySelector(".dialogEdit")
 let formEdit = document.querySelector(".formEdit")
+
+// Info
+let modalInfo = document.querySelector(".dialogInfo")
+let btnClose = document.querySelector(".btnClose")
 
 // Edit function
 
@@ -60,11 +66,21 @@ function getData(data) {
             checkedFunc(e)
         }
 
-        div.append(h1, h2, h3, btnDelete, btnEdit, check)
+        let btnInfo = document.createElement("button")
+        btnInfo.innerHTML = "Info"
+        btnInfo.className = "info-btn";
+        btnInfo.onclick = () => {
+            infoFunc(e)
+            modalInfo.showModal()
+        }
+
+        div.append(h1, h2, h3, btnDelete, btnEdit, check, btnInfo)
         box.appendChild(div)
     })
 }
-
+btnClose.onclick = () => {
+    modalInfo.close()
+}
 
 export { idx }
 

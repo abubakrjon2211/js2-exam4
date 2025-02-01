@@ -49,3 +49,11 @@
     border: none;
     padding: 5px 10px;
 }
+
+.info-btn {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
